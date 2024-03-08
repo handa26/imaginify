@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Imaginify <img src="https://img.shields.io/badge/Build%20with-NextJS-61dbfb?style=popout&logo=nextdotjs">
 
-## Getting Started
+## Contents
 
-First, run the development server:
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation-for-development)
+- [Tech Stack](#tech-stack)
+- [Screenshoots](#screenshoots)
+- [Imaginify](#imaginify)
 
+## Description
+
+Imaginify is a SaaS web app which allow you to do image processing such as background/object removal, image restore, generative fill, and object recolor using Next.js 14, Clerk, MongoDB, Cloudinary AI, and Stripe. 
+
+## Features
+
+### User Onboarding
+
+Using Clerk as authentication & user management, it'll ensures a smooth onboarding experience. Users can set their profile image, name, username, and add a bio to personalize their profiles.
+
+### Background / object removal
+
+Remove background or you can type a prompt to remove specific object from the images
+
+### Image restore
+
+Refining images by removing noise and imperfections.
+
+### Generative fill
+Enhance images dimension using AI which adding more context to the images
+
+### Object recolor
+Identify and recolor objects from the image
+
+### Payment
+Integrates a secure payment infrastructure using stripe
+
+### Search
+
+User have the ability to search for recent edited images by other users
+
+## Installation for Development
+
+Use the package manager [npm](https://www.npmjs.com/get-npm) to install all required dependecies.
+```bash
+npm install
+```
+and then:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Framework: [Next.js](https://nextjs.org/)
+- Styling: [Tailwind CSS](https://nextjs.org/)
+- UI Library: [shadcn/ui](https://ui.shadcn.com/) (for form templates)
+- Authentication: [Clerk](https://clerk.com/)
+- Payment: [Stripe](https://dashboard.stripe.com/)
+- Cloudinary: [Cloudinary](https://cloudinary.com/)
+- Server: Node.js/Express.js
+- Database: MongoDB with Mongoose
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshoots
 
-## Learn More
+<div align="center">
+    <img width="100%" src="./public/imaginify1.png">
+    <img width="100%" src="./public/imaginify2.png">
+    <img width="100%" src="./public/imaginify3.png">
+    <img width="100%" src="./public/imaginify4.png">
+    <img width="100%" src="./public/imaginify5.png">
+    <img width="100%" src="./public/imaginify6.png">
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+## Demo Imaginify
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Let's try it.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="https://imaginify-three-pink.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Imaginify%20Page-Link%20Demo-blue.svg?style=popout&logo=googlechrome"/>
+</a>
